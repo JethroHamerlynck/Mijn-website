@@ -14,9 +14,22 @@
 		defer>
 		</script>
 <link rel="icon" type="image/x-icon" href="/assets/images/aff406d1ea2442df921948458a1a6a37-free.png">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+  crossorigin=""/>
+
+  
+  <link rel="stylesheet" href="css/map.css">
+
+  
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+  crossorigin=""></script>
+  
+  <script src="./js/maps.js" defer></script>
 </head>
 
-<body class="container-fluid">
+<body class="row container-fluid">
 	<nav class="navbar rounded ms-auto my-2 navbar-expand-md bg-body-secondary">
 		<a class="navbar-brand mx-1" href="#"><img src="assets/images/aff406d1ea2442df921948458a1a6a37-free.png"
 				alt="Logo" width="40" height="40"></a>
@@ -40,7 +53,7 @@
 		</section>
 		</section>
 	</nav>
-	<section class="container">
+	<section class="col-6 offset-2 container">
 		<section class="row">
 			<main class="col-md-9 pe-3">
 				<section id="contact" class="row">
@@ -79,6 +92,15 @@
 			</main>
 		</section>
 	</section>
+
+	<aside class="col-4">
+
+		<section id="map" class="row">
+			<span id="apMap" class="col-12 mb-3"></span>
+		  </section>
+
+
+	</aside>
 	<footer class="container-fluid p-4 bg-body-secondary text-center h6 small rounded">&copy; 2024-2025 Jethro Hamerlynck</footer>						
 
 </body>
