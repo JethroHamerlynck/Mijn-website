@@ -29,71 +29,72 @@ defer>
   <script src="./js/maps.js" defer></script>
 </head>
 
-<body class="row container-fluid">
-<nav class="navbar rounded ms-auto my-2 navbar-expand-md bg-body-secondary">
-<a class="navbar-brand mx-1" href="#"><img src="assets/images/aff406d1ea2442df921948458a1a6a37-free.png"
-alt="Logo" width="40" height="40"></a>
-<button class="me-2 navbar-toggler" type="button" data-bs-toggle="collapse"
-data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-aria-label="Toggle navigation">
-<span class="navbar-toggler-icon"></span>
-</button>
-<section class="collapse navbar-collapse" id="navbarSupportedContent">
-<ul class="ms-auto navbar-nav mb-2 mb-lg-0">
-<li class="nav-item">
-<a class="fs-5 nav-link" href="index.html">Home</a>
-</li>
-<li class="nav-item">
-<a class="fs-5 nav-link" href="portfolio.html">Projecten</a>
-</li>
-<li class="nav-item">
-<a class="fs-5 nav-link active" href="contact.html">Contact</a>
-</li>
-</ul>
-</section>
-</nav>
-<main class="col-5 offset-1">
-<section id="contact" class="row">
-<section class="col-12 mb-3">
-<p><h1>Contact</h1></p>
-<hr>
-<form action="#" method="post">
-<fieldset class="row g-3 mb-3">
-<legend class="text-uppercase fs-6 fw-bolder pt-3">gegevens</legend>
-<section class="col-md-6">
-<label for="firstName" class="form-label">voornaam <span>*</span></label>
-<input type="text" class="form-control" id="firstName" required>
-</section>
-<section class="col-md-6">
-<label for="lastName" class="form-label">achternaam <span>*</span></label>
-<input type="text" class="form-control" id="lastName" required>
-</section>
-<section class="col-12">
-<label for="mail" class="form-label">e-mail <span>*</span></label>
-<input type="email" class="form-control" id="mail" required>
-</section>
-<section class="col">
-<label for="mobile" class="form-label">mobiel</label>
-<input type="tel" class="form-control" id="mobile"
-pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}-[0-9]{2}" placeholder="+32">
-</section>
-</fieldset>
-<section class="col-12">
-<button type="submit" class="btn btn-primary">verzenden</button>
-<hr>
-</section>
-</form>
-<section>
-</section>
-</main>
+<body class="container-fluid">
+  <nav class="navbar rounded ms-auto my-2 navbar-expand-md bg-body-secondary">
+      <a class="navbar-brand mx-1" href="#">
+          <img src="assets/images/aff406d1ea2442df921948458a1a6a37-free.png" alt="Logo" width="40" height="40">
+      </a>
+      <button class="me-2 navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <section class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="ms-auto navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                  <a class="fs-5 nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="fs-5 nav-link" href="portfolio.html">Projecten</a>
+              </li>
+              <li class="nav-item">
+                  <a class="fs-5 nav-link active" href="contact.html">Contact</a>
+              </li>
+          </ul>
+      </section>
+  </nav>
 
-<aside class="col-3 offset-1">
-<section id="map" class="row">
-<span id="apMap" class=""></span>
-</section>
-</aside>
-<footer class="container-fluid p-4 bg-body-secondary text-center h6 small rounded">&copy; 2024-2025 Jethro Hamerlynck</footer>
+  <main class="container">
+      <section id="contact" class="row">
+          <section class="col-12 mb-3">
+              <h1>Contact</h1>
+              <hr>
+              <form action="Contact" netlify method="post">
+                  <fieldset class="row g-3 mb-3">
+                      <legend class="text-uppercase fs-6 fw-bolder pt-3">Gegevens</legend>
+                      <section class="col-md-6">
+                          <label for="firstName" class="form-label">Voornaam <span>*</span></label>
+                          <input type="text" class="form-control" id="firstName" required>
+                      </section>
+                      <section class="col-md-6">
+                          <label for="lastName" class="form-label">Achternaam <span>*</span></label>
+                          <input type="text" class="form-control" id="lastName" required>
+                      </section>
+                      <section class="col-12">
+                          <label for="mail" class="form-label">E-mail <span>*</span></label>
+                          <input type="email" class="form-control" id="mail" required>
+                      </section>
+                      <section class="col">
+                          <label for="mobile" class="form-label">Mobiel</label>
+                          <input type="tel" class="form-control" id="mobile" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}-[0-9]{2}" placeholder="+32">
+                      </section>
+                  </fieldset>
+                  <section class="col-12">
+                      <button type="submit" class="btn btn-primary">Verzenden</button>
+                      <hr>
+                  </section>
+              </form>
+          </section>
+      </section>
+  </main>
 
+  <aside class="container">
+      <section id="map" class="row">
+          <span id="apMap"></span>
+      </section>
+  </aside>
+
+  <footer class="container-fluid p-4 bg-body-secondary text-center h6 small rounded">
+      &copy; 2024-2025 Jethro Hamerlynck
+  </footer>
 </body>
 
 </html>
